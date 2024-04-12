@@ -183,7 +183,7 @@ extends:
           allTools: true
       binskim:
         analyzeTargetGlob: '$(Build.SourcesDirectory)/**.dll;$(Build.SourcesDirectory)/**.exe;$(Build.SourcesDirectory)/**.node'
-        symbolsPath: '$(agent.builddirectory)/scanbin/VSCode-win32-${{ parameters.VSCODE_ARCH }}/pdb'
+        symbolsPath: '$(agent.builddirectory)/scanbin/VSCode-win32-x64/pdb'
       credscan:
         suppressionsFile: $(Build.SourcesDirectory)/build/azure-pipelines/config/CredScanSuppressions.json
       sourceAnalysisPool: 1es-windows-2022-x64
